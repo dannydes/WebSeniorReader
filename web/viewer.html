@@ -76,7 +76,6 @@ limitations under the License.
     <script type="text/javascript" src="password_prompt.js"></script>
     <script type="text/javascript" src="presentation_mode.js"></script>
     <script type="text/javascript" src="grab_to_pan.js"></script>
-    <script type="text/javascript" src="hand_tool.js"></script>
 <!--#endif-->
 
     <script type="text/javascript" src="debugger.js"></script>
@@ -132,10 +131,6 @@ limitations under the License.
               <span data-l10n-id="presentation_mode_label">Fullscreen</span>
             </button>
 
-            <button id="secondaryOpenFile" class="secondaryToolbarButton openFile visibleLargeView" title="Open File" tabindex="19" data-l10n-id="open_file">
-              <span data-l10n-id="open_file_label">Open</span>
-            </button>
-
             <button id="secondaryPrint" class="secondaryToolbarButton print visibleMediumView" title="Print" tabindex="20" data-l10n-id="print">
               <span data-l10n-id="print_label">Print</span>
             </button>
@@ -151,12 +146,6 @@ limitations under the License.
             </button>
             <button id="lastPage" class="secondaryToolbarButton lastPage" title="Go to Last Page" tabindex="24" data-l10n-id="last_page">
               <span data-l10n-id="last_page_label">Go to Last Page</span>
-            </button>
-
-            <div class="horizontalToolbarSeparator"></div>
-
-            <button id="toggleHandTool" class="secondaryToolbarButton handTool" title="Enable hand tool" tabindex="27" data-l10n-id="hand_tool_enable">
-              <span data-l10n-id="hand_tool_enable_label">Enable hand tool</span>
             </button>
           </div>
         </div>  <!-- secondaryToolbar -->
@@ -188,10 +177,6 @@ limitations under the License.
               <div id="toolbarViewerRight">
                 <button id="presentationMode" class="toolbarButton presentationMode hiddenLargeView" title="Switch to Presentation Mode" tabindex="12" data-l10n-id="presentation_mode">
                   <span data-l10n-id="presentation_mode_label">Fullscreen</span>
-                </button>
-
-                <button id="openFile" class="toolbarButton openFile hiddenLargeView" title="Open File" tabindex="13" data-l10n-id="open_file">
-                  <span data-l10n-id="open_file_label">Open</span>
                 </button>
 
                 <button id="print" class="toolbarButton print hiddenMediumView" title="Print" tabindex="14" data-l10n-id="print">
@@ -251,10 +236,6 @@ limitations under the License.
                     data-l10n-id="first_page"></menuitem>
           <menuitem id="contextLastPage" label="Last Page"
                     data-l10n-id="last_page"></menuitem>
-          <menuitem id="contextPageRotateCw" label="Rotate Clockwise"
-                    data-l10n-id="page_rotate_cw"></menuitem>
-          <menuitem id="contextPageRotateCcw" label="Rotate Counter-Clockwise"
-                    data-l10n-id="page_rotate_ccw"></menuitem>
         </menu>
 
         <div id="viewerContainer" tabindex="0">

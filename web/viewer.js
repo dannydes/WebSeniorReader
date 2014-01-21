@@ -144,24 +144,16 @@ var PDFView = {
       integratedFind: this.supportsIntegratedFind
     });
 
-    HandTool.initialize({
-      container: container,
-      toggleHandTool: document.getElementById('toggleHandTool')
-    });
-
     SecondaryToolbar.initialize({
       toolbar: document.getElementById('secondaryToolbar'),
       presentationMode: PresentationMode,
       toggleButton: document.getElementById('secondaryToolbarToggle'),
       presentationModeButton:
         document.getElementById('secondaryPresentationMode'),
-      openFile: document.getElementById('secondaryOpenFile'),
       print: document.getElementById('secondaryPrint'),
       download: document.getElementById('secondaryDownload'),
       firstPage: document.getElementById('firstPage'),
-      lastPage: document.getElementById('lastPage'),
-      pageRotateCw: document.getElementById('pageRotateCw'),
-      pageRotateCcw: document.getElementById('pageRotateCcw')
+      lastPage: document.getElementById('lastPage')
     });
 
     PasswordPrompt.initialize({
